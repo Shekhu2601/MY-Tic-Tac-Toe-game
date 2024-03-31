@@ -2,7 +2,7 @@ let boxes =document.querySelectorAll(".box")
 let turnx = true;// player
 let boxtext = document.querySelectorAll(".boxtext")
 let msg = document.querySelector(".msg")
-let msgC = document.querySelector(".msg-container")
+let msgC = document.querySelector(".result")
 let resetbtn = document.querySelector(".btn-reset");
 let newbtn = document.querySelector(".new-btn");
 let img = document.querySelector(".imgbox")
@@ -39,6 +39,7 @@ const showWinner = (winner)=> {
     msgC.classList.remove("hide")
     img.classList.remove("hide")
     r.classList.add("hide")
+    msg.classList.remove("hide")
     disabledBoxes();
     
 
@@ -101,7 +102,7 @@ const disabledBoxes = () =>{
 const enableBoxes = ()=>{
     for( let box of boxes){
         box.disabled= false;
-        box.innerText= ""
+        box.innerText= "";
     }
 }
 newbtn.addEventListener("click",resetGame);
