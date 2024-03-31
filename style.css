@@ -1,0 +1,133 @@
+
+
+
+* {
+    
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color:#d00000;
+    color: aliceblue;
+    height: 45px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+        font-family: "Anton", sans-serif;
+        font-weight: 10vw;
+        font-style: normal;
+      
+      
+    
+    
+}
+.msg{
+    text-align: center;
+    background-color: rgb(38, 138, 38);
+    border-radius: 5px;
+    font-weight: bold;
+    color: aliceblue;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+button{
+    background-color: transparent;
+    color: black;
+}
+ul{
+    list-style: none;
+
+}
+.container{
+    
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.game{
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    
+}
+.box{
+    border: 1px solid black;
+    font-size: 8vw;
+    text-align: center;
+    
+}
+
+.bt-0{
+    border-top: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.imgbox img{
+    width: 250px;
+}
+.hide{
+    display: none;
+}
+.btn-reset{
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: #333d29;
+    color: white;
+    margin-top: 10vh;
+    margin-left: 5vw;
+    
+    
+}
+.info{
+    margin-top: 1vh;
+    
+}
+.info h2{
+    font-size: 25px;
+    background-color: #80ed99;
+    border-radius: 5px;
+    font-style: italic;
+    font-weight: bold;
+    width: auto;
+    text-align: center;
+  
+    font-family: "lobster", sans-serif;
+    font-weight: 10vw;
+    font-style: normal;
+}
+.new-btn{  padding: 1rem;
+    border-radius: .5rem;
+    background-color: rgba(29, 136, 35, 0.87);
+    color: white;
+    
+    margin-top: 1rem;
+    margin-left: 6vw;
+    
+}
+@media screen and (max-width:500px){
+    .container{
+        flex-wrap: wrap;
+    }
+    .game{
+        grid-template-columns: repeat(3,15vw);
+        grid-template-rows: repeat(3,15vw);
+    }
+    .imgbox img{
+        width: 150px;
+    }
+    .info{
+        margin-top: 5vh;
+    }
+    .info h2{
+        font-size: 20px;
+    }
+}
