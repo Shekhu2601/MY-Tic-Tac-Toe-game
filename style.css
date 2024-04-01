@@ -120,6 +120,8 @@ ul{
     .game{
         grid-template-columns: repeat(3,15vw);
         grid-template-rows: repeat(3,15vw);
+         width: 70%;
+        margin-left: 20vw;
     }
     .imgbox img{
         width: 150px;
