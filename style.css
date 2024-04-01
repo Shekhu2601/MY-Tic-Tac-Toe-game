@@ -106,14 +106,14 @@ ul{
 }
 .new-btn{  padding: 1rem;
     border-radius: .5rem;
-    background-color: rgba(29, 136, 35, 0.87);
+    background-color:  #9e2a2b;
     color: white;
     
     margin-top: 1rem;
     margin-left: 6vw;
     
 }
-@media screen and (max-width:500px){
+@media screen and (max-width:700px){
     .container{
         flex-wrap: wrap;
     }
