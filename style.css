@@ -125,9 +125,12 @@ ul{
     }
     .imgbox img{
         width: 150px;
+         margin-left: 5vh;
+        
     }
     .info{
         margin-top: 5vh;
+        
     }
     .info h2{
         font-size: 20px;
